@@ -9,7 +9,7 @@ $(document).ready(function () {
         autoplayTimeout: 4000,
         autoplayHoverPause: true,
         nav: true,
-        navText: ['<img src="../imgs/arrow_left.png" />', '<img src="../imgs/arrow_right.png" />'],
+        navText: ['<img src="/Starter2022/Starter/imgs/arrow_left.png" />', '<img src="/Starter2022/Starter/imgs/arrow_right.png" />'],
         responsive: {
             0: {
                 items: 1,
