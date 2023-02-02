@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div>
+        <img class="w-100" src="imgs/image_translated.png" alt="image">
+    </div>
+
+    <nav class="navbar secondary_nav navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/logo.png" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact_us.html">Contact us</a>
+                    </li>
+                </ul>
+                <a href="signin.html" class="sign_in"> Sign in </a>
+            </div>
+        </div>
+    </nav>
+    <!-- //End nav -->
+    <div>
+        <img class="w-100" src="imgs/img_separator.png" alt="image">
+    </div>
+
+    <section class="payment">
+        <div class="container-fluid">
+            <h2 class="heading text-center"> Payment </h2>
+            <ul class="nav payment_header nav-tabs" role="tablist">
+                <li class="nav-item active">
+                    <a class="active" data-toggle="tab" href="#credit"> Credit card</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#apple" data-toggle="tab"> Apple Pay </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#another" data-toggle="tab"> Another way</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="credit" class="tab-pane active">
+                    <form id="credit_form" action="" class="credit_form">
+                        <div class="form_input">
+                            <input type="text" placeholder="Full name" />
+                        </div>
+                        <div class="form_input">
+                            <input type="text" placeholder="Card Number" />
+                        </div>
+                        <div class="form_input expiry d-flex align-items-center">
+                            <p>Expire date</p>
+                            <select class="gender" name="month">
+                                <option>Month</option>
+                                <option>Female</option>
+                                <option>Male</option>
+                            </select>
+                            <select class="gender" name="year">
+                                <option>Year</option>
+                                <option>Female</option>
+                                <option>Male</option>
+                            </select>
+                        </div>
+                        <div class="privacy_div d-flex align-items-center">
+                            <input type="checkbox" name="terms" class="terms" id="">
+                            <a href="terms.html">i have understand and agreed on the terms and conditions</a>
+                        </div>
+                        <div class="submit">
+                            <button class="submit_btn" type="submit"> Submit </button>
+                        </div>
+                    </form>
+                </div>
+                <div id="apple" class="tab-pane fade">
+                    <form id="credit_form" action="" class="credit_form">
+                        <div class="form_input">
+                            <input type="text" placeholder="Full name" />
+                        </div>
+                        <div class="form_input">
+                            <input type="text" placeholder="Card Number" />
+                        </div>
+                        <div class="form_input expiry d-flex align-items-center">
+                            <p>Expire date</p>
+                                <select class="gender" name="month">
+                                    <option>Month</option>
+                                    <option>Female</option>
+                                    <option>Male</option>
+                                </select>
+                                <select class="gender" name="year">
+                                    <option>Year</option>
+                                    <option>Female</option>
+                                    <option>Male</option>
+                                </select>
+                        </div>
+                        <div class="privacy_div d-flex align-items-center">
+                            <input type="checkbox" name="terms" class="terms" id="">
+                            <a href="terms.html">i have understand and agreed on the terms and conditions</a>
+                        </div>
+                        <div class="submit">
+                            <button class="submit_btn" type="submit"> Submit </button>
+                        </div>
+                    </form>
+                </div>
+                <div id="another" class="tab-pane fade">
+                    <form id="credit_form" action="" class="credit_form">
+                        <div class="form_input">
+                            <input type="text" placeholder="Full name" />
+                        </div>
+                        <div class="form_input">
+                            <input type="text" placeholder="SSN" />
+                        </div>
+                        <div class="privacy_div d-flex align-items-center">
+                            <input type="checkbox" name="terms" class="terms" id="">
+                            <a href="terms.html">i have understand and agreed on the terms and conditions</a>
+                        </div>
+                        <div class="submit">
+                            <button class="submit_btn" type="submit"> Submit </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="imgs/footer_logo.png" class="footer_logo" alt="footer_logo">
+                    <div class="social d-flex align-items-center">
+                        <div class="social_icon">
+                            <img src="imgs/insta.png" alt="insta">
+                        </div>
+                        <div class="social_icon">
+                            <img src="imgs/twitter.png" alt="twitter">
+                        </div>
+                        <div class="social_icon">
+                            <img src="imgs/facebook.png" alt="facebook">
+                        </div>
+                        <div class="social_icon">
+                            <img src="imgs/snap.png" alt="snap">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="footer_links d-flex ">
+                        <div class="links">
+                            <h5>General</h5>
+                            <a href="#"> Home </a>
+                            <a href="#"> About us </a>
+                            <a href="#"> Our services </a>
+                            <a href="#"> Contact us </a>
+                        </div>
+                        <div class="links">
+                            <h5>Explore</h5>
+                            <a href="#"> Contact information </a>
+                            <a href="#">Newsletter </a>
+                            <a href="#"> Offers </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="imgs/footer_image.png" class="footer_image w-100" alt="footer_image" />
+        <div class="footer_big_bg">
+            <img src="imgs/footer_big_bg.png" class="w-100" alt="footer_big_bg" />
+        </div>
+        <div class="copyrights">
+            All rights reserved to
+            <a href="www.arabisml.com" class="website">www.arabisml.com</a>
+            @ 2023 Terms and conditions -
+            <a href="#" class="privacy"> privacy policy</a>
+        </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

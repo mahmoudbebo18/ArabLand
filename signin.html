@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div>
+        <img class="w-100" src="imgs/image_translated.png" alt="image">
+    </div>
+
+    <nav class="navbar secondary_nav navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/logo.png" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact_us.html">Contact us</a>
+                    </li>
+                </ul>
+                <a href="signin.html" class="sign_in"> Sign in </a>
+            </div>
+        </div>
+    </nav>
+    <!-- //End nav -->
+    <div>
+        <img class="w-100" src="imgs/img_separator.png" alt="image">
+    </div>
+
+    <!-- Terms -->
+    <section class="terms privacy">
+        <div class="container-fluid">
+            <div class="content">
+                <h1 class="heading text-center"> Sign in </h1>
+                <form action="" class="sign_in_form">
+                    <div class="form_input">
+                        <input type="text" placeholder="Name" name="name" id="name">
+                    </div>
+                    <div class="form_input">
+                        <input type="text" placeholder="Sure name" name="sur_name" id="sur_name">
+                    </div>
+                    <div class="form_input">
+                        <select class="gender" name="gender">
+                            <option>Gender</option>
+                            <option>Female</option>
+                            <option>Male</option>
+                        </select>
+                    </div>
+                    <div class="form_input">
+                        <input type="text" placeholder="City" name="city" id="city">
+                    </div>
+                    <div class="form_input d-flex phone_wrapper align-items-center">
+                        <input class="code" type="text" placeholder="Country Code" name="code" id="code">
+                        <input class="number" type="text" placeholder="Phone number" name="number" id="number">
+                    </div>
+                    <div class="form_input">
+                        <input type="email" required="required" placeholder="Email" name="email" id="email">
+                    </div>
+                    <div class="form_input">
+                        <input type="text" required="required" placeholder="Password" name="password" id="password">
+                    </div>
+                    <div class="form_input">
+                        <input type="text" required="required" placeholder="Confirm password" name="cofirm_pass"
+                            id="cofirm_pass">
+                    </div>
+                    <div class="form_input more_options d-flex align-items-center">
+                        <div class="privacy_div d-flex align-items-center">
+                            <input type="checkbox" name="privacy" id="privacy">
+                            <a href="privacy.html"> Agree on privacy of use </a>
+                        </div>
+                        <p class="login_p"> You already have account , <a href="#"> Login </a> </p>
+                    </div>
+                    <div class="submit">
+                        <button class="submit_btn" type="submit"> Sign in </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div>
+        <img class="w-100" src="imgs/img_separator.png" alt="image">
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="imgs/footer_logo.png" class="footer_logo" alt="footer_logo">
+                    <div class="social d-flex align-items-center">
+                        <div class="social_icon">
+                            <img src="imgs/insta.png" alt="insta">
+                        </div>
+                        <div class="social_icon">
+                            <img src="imgs/twitter.png" alt="twitter">
+                        </div>
+                        <div class="social_icon">
+                            <img src="imgs/facebook.png" alt="facebook">
+                        </div>
+                        <div class="social_icon">
+                            <img src="imgs/snap.png" alt="snap">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="footer_links d-flex ">
+                        <div class="links">
+                            <h5>General</h5>
+                            <a href="#"> Home </a>
+                            <a href="#"> About us </a>
+                            <a href="#"> Our services </a>
+                            <a href="#"> Contact us </a>
+                        </div>
+                        <div class="links">
+                            <h5>Explore</h5>
+                            <a href="#"> Contact information </a>
+                            <a href="#">Newsletter </a>
+                            <a href="#"> Offers </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="imgs/footer_image.png" class="footer_image w-100" alt="footer_image" />
+        <div class="footer_big_bg">
+            <img src="imgs/footer_big_bg.png" class="w-100" alt="footer_big_bg" />
+        </div>
+        <div class="copyrights">
+            All rights reserved to
+            <a href="www.arabisml.com" class="website">www.arabisml.com</a>
+            @ 2023 Terms and conditions -
+            <a href="#" class="privacy"> privacy policy</a>
+        </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
