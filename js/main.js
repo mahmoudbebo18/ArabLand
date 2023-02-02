@@ -9,7 +9,7 @@ $(document).ready(function () {
         autoplayTimeout: 4000,
         autoplayHoverPause: true,
         nav: true,
-        navText: ['<img src="../../imgs/arrow_left.png" />', '<img src="../../imgs/arrow_right.png" />'],
+        navText: ['<i class="fas fa-3x fa-chevron-left"></i>', '<i class="fas fa-3x fa-chevron-right"></i>'],
         responsive: {
             0: {
                 items: 1,
