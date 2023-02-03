@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
+    $(".feeds .owl-carousel").owlCarousel({
         autoWidth: true,
         stagePadding: 0,
         dots: false,
@@ -29,6 +29,22 @@ $(document).ready(function () {
                 margin: 30,
             }
         }
+    });
+    $(".offers_details .owl-carousel").owlCarousel({
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        items: 1,
+        itemsDesktop: false,
+        itemsDesktopSmall: false,
+        itemsTablet: false,
+        itemsMobile: false,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        dots:true,
+        loop: true,
+        navText: ['<i class="fas fa-3x fa-chevron-left"></i>', '<i class="fas fa-3x fa-chevron-right"></i>'],
     });
 });
 

@@ -302,6 +302,10 @@ body {
 
 .feeds {
     padding-top: 44px;
+    background-image: url(../imgs/feedsBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
     .sep_img {
         margin-bottom: 40px;
     }
@@ -343,23 +347,23 @@ body {
             padding: 8px;
         }
     }
-    .owl-next,
-    .owl-prev {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        @media (max-width: 1200px) {
-            display: none;
-        }
-    }
-    .owl-next {
-        right: -30px;
-    }
-    .owl-prev {
-        left: -30px;
+}
+.owl-next,
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none !important;
+    @media (max-width: 1200px) {
+        display: none;
     }
 }
-
+.owl-next {
+    right: -30px;
+}
+.owl-prev {
+    left: -30px;
+}
 .newsletter {
     background-image: url(../imgs/nwesletter.png);
     padding: 45px 0 55px;
@@ -713,6 +717,17 @@ footer {
     @media (max-width: 575px) {
         padding: 28px 0;
     }
+    ul{
+        list-style: decimal;
+    }
+    .paragraph {
+        span {
+            display: block;
+            margin-top: 20px;
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
 }
 
 /*sign_in_form*/
@@ -853,8 +868,8 @@ footer {
     padding: 48px 0;
     margin: 0;
 }
-.about_sep{
-    img{
+.about_sep {
+    img {
         transform: translate(400px, 0px);
     }
 }
@@ -963,12 +978,13 @@ footer {
         .caption {
             padding: 0 22px 22px;
             position: relative;
-            h5 {
+            a {
                 color: #fff;
                 font-weight: 700;
                 font-size: 25px;
                 line-height: 30px;
                 margin-bottom: 16px;
+                display: block;
             }
             p {
                 font-weight: 400;
@@ -1049,8 +1065,6 @@ footer {
     display: none;
 }
 
-
-
 .add-read-more.show-more-content .read-more {
     display: none;
 }
@@ -1062,6 +1076,178 @@ footer {
     display: block;
     width: fit-content;
 }
-.read-more.span{
+.read-more.span {
     display: inline;
+}
+
+/*offers_details*/
+
+.offers_details {
+    padding: 48px 80px;
+    @media (max-width: 767px) {
+        padding: 28px 0;
+    }
+    .heading {
+        margin-bottom: 41px;
+    }
+
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 8px;
+        .owl-dot {
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: #37190080;
+            transition: 0.3s all ease-in-out;
+        }
+        .owl-dot.active {
+            width: 34px;
+            border-radius: 100px;
+            background-color: $primary;
+        }
+    }
+}
+
+/*region*/
+
+.region {
+    .wrapper {
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+        background: #f6e2b1;
+        padding: 38px 81px;
+        @media (max-width: 767px) {
+            padding: 28px;
+            .content {
+                margin-bottom: 16px;
+            }
+        }
+
+        p {
+            font-size: 25px;
+            margin-bottom: 20px;
+            @media (max-width: 767px) {
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.our_services {
+    padding: 42px 0;
+    .heading {
+        margin-bottom: 28px;
+    }
+    .services_card {
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+        background-color: #ffffff;
+        padding: 22px 18px;
+        border-radius: 12px;
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+        img {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        .caption {
+            h6 {
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 30px;
+                margin-bottom: 16px;
+                color: $primary;
+                @media (max-width: 767px) {
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-bottom: 8px;
+                }
+            }
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: $primary;
+                margin: 0;
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+.instructions {
+    .wrapper {
+        background: #f6e2b1;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        padding: 13px 30px;
+        margin-bottom: 70px;
+        @media (max-width: 767px) {
+            margin-bottom: 36px;
+        }
+        h3 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 49px;
+            color: $primary;
+            margin-bottom: 30px;
+            @media (max-width: 767px) {
+                font-size: 24px;
+                line-height: 34px;
+                margin-bottom: 24px;
+            }
+        }
+        .content {
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 160%;
+            color: rgba(55, 25, 0, 0.8);
+            margin-bottom: 56px;
+            @media (max-width: 767px) {
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .action {
+        gap: 44px;
+        flex-wrap: wrap;
+        .join,
+        .need_help {
+            width: 250px;
+            max-width: 100%;
+            padding: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-decoration: none !important;
+            max-width: 100%;
+            @media (max-width: 767px) {
+                font-size: 16px;
+                line-height: 24px;
+                padding: 4px;
+            }
+        }
+        .join {
+            background-color: transparent;
+            color: $primary;
+            border: 3px solid $primary;
+            filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+        }
+        .need_help {
+            background-color: $primary;
+            border: 3px solid $primary;
+            color: #fff;
+        }
+    }
 }
