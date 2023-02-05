@@ -64,13 +64,20 @@ $(document).ready(function () {
         $('#cart_modal').modal('show')
 
     })
+
+    //toggle text function
+
+    $.fn.extend({
+        toggleText: function (a, b) {
+            return this.text(this.text() == b ? a : b);
+        }
+    });
+
     $('.slide').click(function (e) {
         e.preventDefault();
-        $('.golas li').toggleClass('show hide')
-
+        $('.golas li').toggleClass('show hide');
+        $(this).toggleText('Show More', 'Show less');
     })
-
-
 });
 
 jQuery(function ($) {
