@@ -10,6 +10,25 @@ body {
   }
 }
 
+.modal-header {
+  border: none;
+}
+
+.form_input.req {
+  position: relative;
+  display: block;
+}
+.form_input.req::after {
+  content: "*";
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  color: red;
+  /* width: 50px; */
+  /* height: 50px; */
+  font-size: 25px;
+}
+
 .heading {
   font-weight: 700;
   font-size: 50px;
