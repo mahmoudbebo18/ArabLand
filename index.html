@@ -43,7 +43,7 @@
                             <a class="nav-link " href="contact_us.html">Contact us</a>
                         </li>
                     </ul>
-                    <a href="signin.html" class="sign_in"> Sign in </a>
+                    <a href="#" class="sign_in"> Sign in </a>
                 </div>
             </div>
         </nav>
@@ -80,10 +80,10 @@
                         <img src="imgs/01.png" alt="about step " />
                         <h2>
                             <span class="text-uppercase">ABOUT US</span>
-                            Who We Are ?
+                            Who We Are
                         </h2>
                     </div>
-                    <p class="add-read-more show-less-content">
+                    <p class="add-read-more paragraph show-less-content">
                         We are Arabism Land for Touring Co.
                         Registered in the Kingdom of Saudi Arabia and licensed from the ministry of tourism.
                         We provide domestic touring services in the Kingdom of Saudi Arabia.
@@ -110,12 +110,17 @@
                             Our Goals
                         </h2>
                     </div>
-                    <ul class="add-read-more show-less-content">
-                        ● Organize suitable tours and special activities,
-                        ● Providing unforgettable moments and rich experience,
-                        ● Deliver high quality service,
-                        ● Customer’s complete satisfaction.
+                    <ul class="paragraph">
+                        <li>
+                            Organize suitable tours and special activities,..
+                        </li>
+                        <li class="hide">
+                            Providing unforgettable moments and rich experience,
+                        </li>
+                        <li class="hide">Deliver high quality service,</li>
+                        <li class="hide">Customer’s complete satisfaction.</li>
                     </ul>
+                    <a href="#" class="slide"> Read more </a>
                 </div>
                 <div class="col-lg-6">
                     <img src="imgs/goal.png" class="w-100" alt="about " />
@@ -145,23 +150,29 @@
                             Our services
                         </h2>
                     </div>
-                    <p>
+                    <p class="paragraph">
                         We are offering our services in the kingdom of saudi arabia which includes the following :
                     </p>
-                    <ul class="list-unstyled p-0">
+                    <ul class="">
                         <li class="d-flex align-items-center">
-                            <img src="imgs/location.png" alt="location" />
                             <span> Organize tours and trips </span>
                         </li>
-                        <li class="d-flex align-items-center">
-                            <img src="imgs/Affected Person.png" alt="Affected" />
+                        <li class="">
                             <span> Offering full tourist guided services. </span>
                         </li>
-                        <li class="d-flex align-items-center">
-                            <img src="imgs/car.png" alt="car" />
+                        <li class="">
                             <span>Car rental with driver</span>
                         </li>
+                        <li class="">
+                            <span>Organize special and business tours. </span>
+                        </li>
+                        <li class="">
+                            <span>Organize special business tours that suit individual requirements</span>
+                        </li>
                     </ul>
+                    <p class="paragraph">
+                        Arabism Land handles and takes care of every aspect of all tours and trips from the planning
+                        through the end of the journey. </p>
                     <a href="#">Read less</a>
                 </div>
 
@@ -370,6 +381,56 @@
             </div>
         </div>
     </section>
+
+    <!-- Login Modal  -->
+    <div class="modal lg_modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="termsModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <h5 class="heading text-center w-100" id="exampleModalLongTitle">
+                        Login
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="imgs/times.png" alt="times" />
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form_input">
+                            <input type="email" required="required" placeholder="Email" name="email" id="email">
+                        </div>
+                        <div class="form_input">
+                            <input type="password" required="required" placeholder="Password" name="Password"
+                                id="Password">
+                        </div>
+                        <div class="submit">
+                            <button class="submit_btn" type="submit"> Login </button>
+                        </div>
+                        <p>
+                            You don't have account , <a href="signin.html"> Sign up </a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cookies Modal  -->
+    <div class="modal lg_modal fade" id="cookies_modal" tabindex="-1" role="dialog" aria-labelledby="termsModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="imgs/cookies.png" alt="cookies" />
+                    <p>
+                        this website is using Cookies! Continue browsing the website means that you agreed on the
+                        privacy policy!For more information please refer to the privacy policy of Arabism Land
+                    </p>
+                </div>
+                <button type="button" class="done" data-dismiss="modal">Done</button>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container-fluid">
             <div class="row">

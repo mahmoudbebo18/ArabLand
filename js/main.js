@@ -42,10 +42,35 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 4000,
         autoplayHoverPause: true,
-        dots:true,
+        dots: true,
         loop: true,
         navText: ['<i class="fas fa-3x fa-chevron-left"></i>', '<i class="fas fa-3x fa-chevron-right"></i>'],
     });
+
+
+    $('.terms_modal').click(function (e) {
+        e.preventDefault();
+        $('#termsModal').modal('show')
+
+    })
+    $('.sign_in').click(function (e) {
+        e.preventDefault();
+        $('#login_modal').modal('show')
+
+    });
+
+    $('.join').click(function (e) {
+        e.preventDefault();
+        $('#cart_modal').modal('show')
+
+    })
+    $('.slide').click(function (e) {
+        e.preventDefault();
+        $('.golas li').toggleClass('show hide')
+
+    })
+
+
 });
 
 jQuery(function ($) {
@@ -81,4 +106,34 @@ jQuery(function ($) {
     }
 
     AddReadMore();
+
+
+
+    function increase() {
+        var a = 1;
+        var textBox = document.getElementById("text");
+        textBox.value++;
+
+    }
+
+    function decrease() {
+        var textBox = document.getElementById("text");
+        textBox.value--;
+    }
+
+    var $textbox = $("#incdec input");
+
+    $("#up").click(function () {
+        var value = parseInt($textbox.val(), 10);
+
+        $textbox.val(value + 1);
+    });
+
+    $("#down").click(function () {
+        var value = parseInt($textbox.val(), 10);
+
+        if (value > 0) {
+            $textbox.val(value - 1);
+        }
+    });
 });
