@@ -12,13 +12,16 @@ body {
         padding: 0 70px;
     }
 }
-.modal-header{
-    border: none ;
+
+.modal-header {
+    border: none;
 }
-.form_input.req{
+
+.form_input.req {
     position: relative;
     display: block;
-    &::after{
+
+    &::after {
         content: "*";
         position: absolute;
         right: 20px;
@@ -51,7 +54,7 @@ body {
     margin-bottom: 40px;
 
     @media (max-width: 575px) {
-        font-size: 16px;
+        font-size: 16px !important;
         line-height: 26px;
         margin-bottom: 28px;
     }
@@ -62,7 +65,7 @@ body {
 .hero {
     background-image: url(../imgs/hero.png);
     min-height: 926px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 
     @media (max-width: 991px) {
@@ -152,8 +155,8 @@ body {
     }
 
     span {
-        font-weight: 400;
-        font-size: 32px;
+        font-weight: 600;
+        font-size: 35px;
         line-height: 39px;
         color: $primary;
         margin-bottom: 8px;
@@ -166,13 +169,22 @@ body {
     }
 
     p {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 32px;
         line-height: 39px;
         color: $primary;
         margin-bottom: 40px;
-        width: 587px;
+        width: 863px;
         max-width: 100%;
+
+        .first {
+            font-weight: 500;
+            font-size: 32px;
+        }
+
+        strong {
+            font-size: 30px;
+        }
 
         @media (max-width: 575px) {
             font-size: 16px;
@@ -181,21 +193,42 @@ body {
         }
     }
 
-    a {
-        padding: 16px 51px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 29px;
-        color: $primary;
-        border: 2px solid $primary;
-        border-radius: 20px;
-        display: inline-flex;
+    .hero_actions {
+        gap: 22px;
+        flex-wrap: wrap;
 
-        @media (max-width: 575px) {
-            padding: 8px 32px;
-            font-size: 16px;
+        a {
+            padding: 16px 51px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: $primary;
+            border: 2px solid $primary;
+            border-radius: 20px;
+            display: inline-flex;
+
+            text-decoration: none;
+
+            @media (max-width: 575px) {
+                padding: 8px 32px;
+                font-size: 16px;
+            }
+        }
+
+        .subscribe {
+            background-color: #F9A51A;
+            border-color: #F9A51A;
+            padding: 6px 16px;
+            color: $primary;
+        }
+
+        .hero_slide {
+            padding: 6px 28px;
+            font-weight: 500;
+
         }
     }
+
 }
 
 /*about*/
@@ -215,6 +248,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative;
+        z-index: 20;
 
         .head {
             display: flex;
@@ -234,6 +269,8 @@ body {
                 font-size: 50px;
                 line-height: 61px;
                 color: $primary;
+                font-weight: bold;
+                margin: 0;
 
                 span {
                     display: block;
@@ -257,11 +294,26 @@ body {
             }
         }
 
+        p {
+            font-size: 35px;
+            font-weight: 500;
+
+            .hide {
+                display: none;
+            }
+
+            .show {
+                display: block;
+            }
+        }
+
         ul {
             font-size: 32px;
             line-height: 39px;
             color: $primary;
             margin-bottom: 72px;
+            font-weight: 500;
+
 
             li {
                 margin-bottom: 12px;
@@ -280,15 +332,17 @@ body {
             line-height: 29px;
             color: #fff;
             background-color: $primary;
-            padding: 9px 36px;
+            padding: 4px 24px;
+            border: 2px solid $primary;
             border-radius: 20px;
             width: fit-content;
             display: inline-block;
+            text-decoration: none;
 
             @media (max-width: 767px) {
                 font-size: 14px;
                 line-height: 26px;
-                padding: 8px 24px;
+                padding: 4px 16px;
             }
         }
     }
@@ -345,6 +399,7 @@ body {
 
         p {
             margin-bottom: 40px;
+            font-weight: 500;
         }
 
         ul {
@@ -360,7 +415,7 @@ body {
 
                 span {
                     font-weight: 500;
-                    font-size: 30px;
+                    font-size: 35px;
                     line-height: 37px;
                     color: $primary;
 
@@ -372,6 +427,34 @@ body {
             }
         }
     }
+
+    .hide {
+        display: none !important;
+    }
+
+    .show {
+        display: flex !important;
+    }
+
+}
+
+.ser_actions {
+    gap: 24px;
+
+    @media (max-width: 767px) {
+        gap: 12px;
+    }
+
+    .con_us {
+        padding: 5px 24px;
+        background-color: transparent !important;
+        border: 2px solid $primary !important;
+        color: $primary !important;
+    }
+}
+
+.hide_sauid.hide {
+    display: none;
 }
 
 //  feeds
@@ -879,27 +962,40 @@ footer {
         }
     }
 
-    li.paragraph,
+    li,
     h2 {
-        @media (max-width: 575px) {
-            font-size: 16px;
-            line-height: 26px;
-            margin-bottom: 28px;
-            font-weight: bold;
+        @media (max-width: 767px) {
+            font-size: 16px !important;
+            line-height: 26px !important;
+            margin-bottom: 28px !important;
+            font-weight: bold !important;
 
             span {
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 26px;
             }
         }
+    }
+
+    li {
+        font-size: 50px;
+
+        font-weight: 500;
+        line-height: 60px;
+
+    }
+
+    h2 {
+        font-size: 50px;
     }
 
     .paragraph {
         span {
             display: block;
             margin-top: 20px;
-            font-size: 22px;
-            line-height: 32px;
+            font-size: 32px;
+            line-height: 42px;
+            font-weight: 500;
         }
     }
 }
@@ -923,7 +1019,7 @@ footer {
                 width: 110px;
 
                 &::placeholder {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
         }
@@ -972,7 +1068,7 @@ footer {
     text-align: center;
 
     .submit_btn {
-        padding: 8px 61px;
+        padding: 6px 36px;
         border-radius: 20px;
         background-color: $primary;
         color: #fff;
@@ -1099,7 +1195,7 @@ footer {
                 line-height: 37px;
                 color: $primary;
                 text-align: center;
-                padding: 36px 24px;
+                padding: 16px 24px;
                 display: inline-block;
                 width: 100%;
                 text-decoration: none !important;
@@ -1134,6 +1230,10 @@ footer {
     .expiry {
         gap: 28px;
 
+        @media (max-width: 767px) {
+            gap: 12px;
+        }
+
         select {
             flex: 1;
         }
@@ -1143,6 +1243,10 @@ footer {
             font-size: 20px;
             line-height: 24px;
             color: $primary;
+
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -1290,25 +1394,19 @@ footer {
     }
 }
 
-.add-read-more.show-less-content .second-section,
-.add-read-more.show-less-content .read-less {
-    display: none;
-}
-
-.add-read-more.show-more-content .read-more {
-    display: none;
-}
-
-.add-read-more a.read-more,
-.add-read-more a.read-less {
-    cursor: pointer;
-    margin-top: 40px;
-    display: block;
-    width: fit-content;
-}
 
 .read-more.span {
     display: inline;
+}
+
+.add-read-more {
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
 }
 
 /*offers_details*/
@@ -1521,9 +1619,17 @@ footer {
             border-radius: 30px;
             padding: 70px;
 
+            @media(max-width:767px) {
+                padding: 16px;
+            }
+
             .modal-body {
                 height: 400px;
                 overflow: auto;
+
+                @media(max-width:767px) {
+                    padding: 0;
+                }
 
                 &::-webkit-scrollbar {
                     width: 10px;
