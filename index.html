@@ -54,7 +54,7 @@
         <div class="hero_content">
             <div class="container-fluid">
                 <h1>Arabism land</h1>
-                <span>For Touring</span>
+                <span class="welcome">welcomes you to</span>
                 <p class="add-read-more  show-less-content">
                     Explore Saudi Arabia like you’ve never seen before.
                     Arabism Land offers you a discovery opportunity in an extraordinary journey.
@@ -162,8 +162,7 @@
                         </h2>
                     </div>
                     <p class="paragraph">
-                        We are offering our services in the kingdom of saudi arabia which includes the following :
-                    </p>
+                        we are offering our services in the kingdom of saudi arabia, which includes the following: </p>
                     <ul class="list-unstyled m-0">
                         <li class="d-flex align-items-center">
                             <img src="imgs/ser1.png" alt="">
@@ -233,7 +232,7 @@
 
     <!-- About Us -->
 
-    <section class="about">
+    <section class="about saudi">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6">
@@ -294,7 +293,9 @@
             <div class="content text-center">
                 <h2> Newsletter </h2>
                 <p>
-                    Sign up now for upcoming tours, trips, personalized itineraries, and exclusive offers! </p>
+                    Sign up now for upcoming tours, trips,
+                    personalized itineraries, and exclusive offers
+                </p>
             </div>
             <form class="d-flex justify-content-center">
                 <input type="email" required name="email" id="email">
@@ -349,22 +350,24 @@
                         </div>
                         <div class="address_info">
                             <div class="d-flex address_item align-items-center">
-                                <img src="imgs/world.png" alt="world" />
+                                <img src="imgs/location_pin.png" alt="location_pin" />
                                 <div>
-                                    <h5>Website</h5>
-                                    <span>info@arabisml.com</span>
+                                    <h5>Address</h5>
+                                    <span class="d-block">
+                                        3610 Prince Mohammed Bin Salman Bin Abdulaziz Rd.,Hitteen Dist.
+                                        Riyadh 13516 - 6476
+                                        Kingdom Of Saudi Arabia
+                                    </span>
                                 </div>
                             </div>
                         </div>
                         <div class="address_info">
-                            <div class="d-flex address_item align-items-center">
+                            <div class="d-flex m-0 address_item align-items-center">
                                 <img src="imgs/location_pin.png" alt="location_pin" />
                                 <div>
-                                    <h5>Location</h5>
-                                    <span>3610 Prince Mohammed Bin Salman Bin Abdulaziz Rd.,Hitteen Dist.
-                                        Riyadh 13516 - 6476
-                                        Kingdom Of Saudi Arabia
-
+                                    <h5>Address</h5>
+                                    <span>
+                                        RRDH3610
                                     </span>
                                 </div>
                             </div>
@@ -378,12 +381,23 @@
                             <img src="imgs/Line_straight.png" alt="line ">
                         </h3>
                         <form action="">
-                            <input type="text" class="input" placeholder="Name">
-                            <input type="email" class="input" placeholder="Email">
-                            <input type="text" class="input" placeholder="Phone number">
-                            <input type="text" class="input" placeholder="Name">
+                            <div class="input_wrapper">
+                                <label for="name"> Name <span class="required">*</span> </label>
+                                <input type="text" name="name" class="input"/>
+                            </div>
+                            <div class="input_wrapper">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="input"/>
+                            </div>
+                            <div class="input_wrapper">
+                                <label for="phone">Phone number <span class="required">*</span></label>
+                                <input type="text" name="phone" class="input"/>
+                            </div>
+                            <div class="input_wrapper">
+                                <label for="subject">Subject</label>
+                                <input type="text" name="subject" class="input"/>
+                            </div>
                             <textarea name="" id="" cols="30" placeholder="Your Massage"></textarea>
-
                             <button> send </button>
                         </form>
                     </div>
@@ -403,7 +417,7 @@
                     <div class="d-flex hours_wrapper align-items-center">
                         <div>
                             <h6>work hours</h6>
-                            <span>7AM - 16:30PM Friday and Saturday </span>
+                            <span class="second_time"> 7AM - 16:30PM Friday and Saturday </span>
                         </div>
                     </div>
                 </div>

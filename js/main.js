@@ -97,7 +97,20 @@ $(document).ready(function () {
         e.preventDefault();
         $('.hide_sauid').toggleClass('show');
         $(this).toggleText('Read More', 'Read less');
-    })
+    });
+
+    $('.input')
+        .focus(function () {
+            $(this).prev('label').addClass('u-hidden');
+        })
+        .blur(function () {
+            n = $(this).val();
+            if (n.length < 1) {
+                $(this).prev('label').removeClass('u-hidden');
+            } else {
+                $(this).prev('label').addClass('u-hidden');
+            }
+        });
 });
 
 jQuery(function ($) {

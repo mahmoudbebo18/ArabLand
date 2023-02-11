@@ -70,6 +70,7 @@ body {
 
     @media (max-width: 991px) {
         height: auto;
+        min-height: auto;
         background-size: cover;
         padding-bottom: 24px;
     }
@@ -154,10 +155,10 @@ body {
         }
     }
 
-    span {
+    .welcome {
         font-weight: 600;
         font-size: 35px;
-        line-height: 39px;
+        line-height: 43px;
         color: $primary;
         margin-bottom: 8px;
         display: inline-block;
@@ -173,7 +174,7 @@ body {
         font-size: 32px;
         line-height: 39px;
         color: $primary;
-        margin-bottom: 40px;
+        margin-bottom: 115px;
         width: 863px;
         max-width: 100%;
 
@@ -269,7 +270,7 @@ body {
                 font-size: 50px;
                 line-height: 61px;
                 color: $primary;
-                font-weight: bold;
+                font-weight: 600;
                 margin: 0;
 
                 span {
@@ -297,6 +298,7 @@ body {
         p {
             font-size: 35px;
             font-weight: 500;
+            margin-bottom: 28px;
 
             .hide {
                 display: none;
@@ -311,7 +313,7 @@ body {
             font-size: 32px;
             line-height: 39px;
             color: $primary;
-            margin-bottom: 72px;
+            margin-bottom: 40px;
             font-weight: 500;
 
 
@@ -368,6 +370,10 @@ body {
     }
 
     .about_content {
+        .head {
+            margin-bottom: 28px;
+        }
+
         p {
             margin-bottom: 32px;
         }
@@ -440,6 +446,7 @@ body {
 
 .ser_actions {
     gap: 24px;
+    margin-top: 40px;
 
     @media (max-width: 767px) {
         gap: 12px;
@@ -455,6 +462,14 @@ body {
 
 .hide_sauid.hide {
     display: none;
+}
+
+.saudi {
+    background-position: center;
+
+    .about_content .head h2 {
+        font-weight: bold;
+    }
 }
 
 //  feeds
@@ -476,7 +491,7 @@ body {
             font-size: 50px;
             line-height: 61px;
             color: $primary;
-            margin-bottom: 24px;
+            margin-bottom: 160px;
 
             @media (max-width: 767px) {
                 font-size: 24px;
@@ -539,7 +554,7 @@ body {
 
 .newsletter {
     background-image: url(../imgs/nwesletter.png);
-    padding: 45px 0 55px;
+    padding: 45px 0 63px;
     color: #fff;
     position: relative;
 
@@ -580,7 +595,11 @@ body {
             font-weight: 500;
             font-size: 32px;
             line-height: 39px;
-            margin-bottom: 100px;
+            margin-bottom: 60px;
+            width: 715px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 100%;
 
             @media (max-width: 767px) {
                 font-size: 16px;
@@ -595,7 +614,7 @@ body {
         z-index: 4;
 
         input {
-            height: 72px;
+            height: 63px;
             background-color: $bgColor;
             border: none;
             outline: none;
@@ -612,14 +631,14 @@ body {
         }
 
         button {
-            height: 72px;
+            height: 63px;
             border: none;
             padding: 0;
             width: 210px;
             margin-left: -4px;
             border-radius: 0 10px 10px 0;
             background-color: $primary;
-            color: rgba($color: #ffffff, $alpha: 0.5);
+            color: #fff;
             font-size: 30px;
             font-weight: bold;
 
@@ -670,8 +689,8 @@ body {
             span {
                 color: #37190080;
                 font-weight: 700;
-                font-size: 40px;
-                line-height: 49px;
+                font-size: 30px;
+                line-height: 36px;
             }
 
             @media (max-width: 767px) {
@@ -688,7 +707,7 @@ body {
 
     h3 {
         gap: 6px;
-        margin-bottom: 64px;
+        margin-bottom: 32px;
         font-weight: 700;
         font-size: 54px;
         line-height: 66px;
@@ -731,6 +750,30 @@ body {
 
     .contact_wrapper {
         form {
+            .input_wrapper {
+                position: relative;
+                background-color: #fdf3d0;
+
+                label {
+                    position: absolute;
+                    margin: 0;
+                    top: 10px;
+                    left: 20px;
+                    font-size: 14px;
+                    color: #828282;
+                    transition: .3s all ease-in-out;
+                    z-index: 1;
+
+                    .required {
+                        color: #f00;
+                    }
+                }
+
+                label.u-hidden {
+                    display: none;
+                }
+            }
+
 
             input,
             textarea {
@@ -739,9 +782,11 @@ body {
                 padding: 10px 20px;
                 margin-bottom: 16px;
                 border: 1px solid #3719004d;
-                background-color: #fdf3d0;
                 border-radius: 6px;
                 outline: none;
+                background-color: transparent;
+                position: relative;
+                z-index: 2;
 
                 &::placeholder {
                     font-size: 14px;
@@ -749,14 +794,16 @@ body {
                 }
             }
 
+
             textarea {
                 height: 120px;
                 resize: none;
                 margin-bottom: 36px;
+                background-color: #fdf3d0;
             }
 
             button {
-                padding: 12px 78px;
+                padding: 7px 60px;
                 border: 3px solid $primary;
                 color: $primary;
                 border-radius: 20px;
@@ -777,7 +824,7 @@ body {
     .work_hours {
         background-color: #3719001a;
         padding: 36px 16px;
-        margin: 41px 0px 0;
+        margin: 45px 0px 0;
 
         @media (max-width: 991px) {
             padding: 24px 0;
@@ -800,12 +847,20 @@ body {
                 line-height: 20px;
                 letter-spacing: 0em;
                 margin-bottom: 0;
+                color: $primary;
             }
 
             span {
+                color: #371900;
+
                 @media (max-width: 991px) {
                     font-size: 16px;
                 }
+            }
+
+            .second_time {
+                color: $primary;
+                font-weight: 500;
             }
         }
     }
@@ -1161,9 +1216,20 @@ footer {
 }
 
 /*about us */
-.about_head {
+.about_page {
     padding: 48px 0;
-    margin: 0;
+    background-position: bottom;
+    height: auto;
+    background-size: contain;
+    .about_content{
+        p{
+            font-size: 32px;
+        }
+    }
+}
+
+.about_head {
+    margin: 0 0 116px 0;
 }
 
 .about_sep {
@@ -1742,15 +1808,15 @@ footer {
 }
 
 .error_page {
-    padding: 48px 0 100px;
+    padding: 100px 0 100px;
 
     .content {
         h2 {
             font-weight: 700;
-            font-size: 100px;
-            line-height: 122px;
-            color: $primary;
-            margin-bottom: 90px;
+            font-size: 50px;
+            line-height: 60px;
+            color: #37190080;
+            margin-bottom: 55px;
 
             @media (max-width: 767px) {
                 font-size: 28px;
@@ -1760,9 +1826,9 @@ footer {
         }
 
         p {
-            font-weight: 400;
+            font-weight: 500;
             font-size: 30px;
-            line-height: 37px;
+            line-height: 40px;
             color: #000000;
             margin-bottom: 90px;
 
@@ -1774,13 +1840,13 @@ footer {
         }
 
         a {
-            padding: 8px 64px;
-            background-color: $primary;
+            padding: 3px 64px;
+            background-color: #371900;
             color: #fff;
             border-radius: 20px;
             font-weight: 700;
             font-size: 24px;
-            line-height: 29px;
+            line-height: 34px;
             text-decoration: none;
             display: inline-block;
 
